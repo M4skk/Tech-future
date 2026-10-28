@@ -1,0 +1,30 @@
+@baseUrl = http://localhost:3001
+
+### Listar todas as inscrições
+GET {{baseUrl}}/inscricoes
+Accept: application/json
+
+### Criar inscrição
+# @name criarInscricao
+POST {{baseUrl}}/inscricoes
+Content-Type: application/json
+
+{
+  "nome": "Maria Silva",
+  "email": "maria.silva@example.com",
+  "telefone": "(11) 99999-9999",
+  "tipoIngresso": "estudante"
+}
+
+### Tentar criar inscrição com e-mail duplicado (espera HTTP 400)
+POST {{baseUrl}}/inscricoes
+Content-Type: application/json
+
+{
+  "nome": "Maria Silva",
+  "email": "maria.silva@example.com",
+  "tipoIngresso": "profissional"
+}
+
+### Excluir a inscrição criada acima
+DELETE {{baseUrl}}/inscricoes/{{criarInscricao.response.body.$.id}}

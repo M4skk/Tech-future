@@ -1,0 +1,15 @@
+{
+  "name": "tech-future-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "API de inscricoes do evento Tech Future",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js --production"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
