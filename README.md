@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# Tech-future
-=======
 # Tech Future
 
 Site de divulgação e inscrição para um evento fictício de tecnologia. O React, o Vite em modo de desenvolvimento e a API Node.js + Express são servidos pelo mesmo servidor e pela mesma porta (`3001`). As inscrições ficam em memória e são reiniciadas quando o backend é encerrado.
