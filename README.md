@@ -56,4 +56,3 @@ O site e a API também estarão disponíveis em **http://localhost:3001**.
 - `DELETE /inscricoes/:id` — exclui uma inscrição.
 
 O campo `tipoIngresso` aceita `estudante` ou `profissional`; `telefone` é opcional. Exemplos de chamadas estão em [`request.http`](./request.http) (extensão REST Client do VS Code).
->>>>>>> 8c90636 (Adicionar aplicação Tech Future)
